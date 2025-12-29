@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | LumenPath Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-bg">
+    <div class="sidebar">
+        <div class="user-profile">
+            <div class="avatar">JD</div>
+            <p id="user-name">Professional Analyst</p>
+        </div>
+        <button onclick="location.href='index.html'">Exit Engine</button>
+    </div>
+
+    <main class="dashboard-content">
+        <div class="top-stats">
+            <div class="card stat-card">
+                <h3>Salary Potential</h3>
+                <h2 id="salary-val">$0</h2>
+            </div>
+            <div class="card stat-card">
+                <h3>Market Match</h3>
+                <h2 id="match-val">0%</h2>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <div class="card list-card">
+                <h3><span class="gold-text">●</span> Live Job Availability</h3>
+                <div id="job-list" class="scroll-list">
+                    <p class="loading">Scanning LinkedIn & GitHub...</p>
+                </div>
+            </div>
+
+            <div class="card list-card">
+                <h3><span class="gold-text">●</span> Recommended Elite Courses</h3>
+                <div id="course-list" class="scroll-list">
+                    <p class="loading">Synthesizing pathways...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
